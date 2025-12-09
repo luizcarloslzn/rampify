@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rampify - Solicitação de Rampas</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favico.ico" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-primary text-white h-20 flex items-center">
+        <div class="container mx-auto flex items-center">
+            <div class="h-16 overflow-hidden flex items-center">
+                <img class="h-56 object-contain" src="./assets/Rampify - Logo.png" alt="Rampify logo">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-primary mb-2">Solicite uma Rampa de Acessibilidade</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Ajude a tornar o Recife mais acessível para todos. Solicite a criação ou manutenção de rampas de acessibilidade em locais necessários.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Map Section -->
+            <div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                        <i class="fas fa-map-marked-alt mr-2"></i> Selecione no Mapa
+                    </h3>
+                    <div id="map"></div>
+                    <p class="text-sm text-gray-500 mt-2">
+                        Clique no mapa para selecionar a localização ou permita o acesso à sua localização atual.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-primary mb-6 flex items-center">
+                        <i class="fas fa-file-alt mr-2"></i> Formulário de Solicitação
+                    </h3>
+                    
+                    <form id="requestForm">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2">Tipo de Solicitação</label>
+                            <div class="flex space-x-4">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="requestType" value="creation" class="form-radio text-primary border-primary" checked>
+                                    <span class="ml-2">Criação de Rampa</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="requestType" value="maintenance" class="form-radio text-primary border-primary">
+                                    <span class="ml-2">Manutenção de Rampa</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="address" class="block text-gray-700 font-medium mb-2">Endereço</label>
+                            <input type="text" id="address" name="address" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input" required placeholder="Digite o endereço ou selecione no mapa">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="details" class="block text-gray-700 font-medium mb-2">Detalhes</label>
+                            <textarea id="details" name="details" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input" placeholder="Descreva a necessidade com detalhes (ex: rampa quebrada, local sem acesso, etc.)"></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Seu Nome</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Seu E-mail</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone (opcional)</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input">
+                        </div>
+
+                        <div class="flex justify-end">
+                            <button type="submit" class="bg-primary hover:bg-dark-red text-white font-bold py-3 px-6 rounded-lg transition duration-200 flex items-center">
+                                <i class="fas fa-paper-plane mr-2"></i> Enviar Solicitação
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-6 bg-white p-4 rounded-lg shadow-md">
+                    <h4 class="text-lg font-semibold text-primary mb-2 flex items-center">
+                        <i class="fas fa-info-circle mr-2"></i> Como funciona?
+                    </h4>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                        <li>Selecione no mapa ou digite o endereço onde precisa da rampa</li>
+                        <li>Preencha os detalhes da solicitação</li>
+                        <li>Nossa equipe analisará e entrará em contato se necessário</li>
+                        <li>Você receberá atualizações por e-mail</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-6 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold"><i class="fas fa-wheelchair mr-2"></i>Acessibilidade Recife</h3>
+                    <p class="text-sm opacity-80">Um Recife mais acessível para todos</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/luizcarlos.tech/" class="hover:text-gray-200"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-4 pt-4 text-sm text-center md:text-left">
+                <p>© 2025 - Acessibilidade e Inclusão é um direito de todos.</p>
+                <p>Criado com ❤️ por Luiz Carlos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Script externo -->
+    <script src="script.js"></script>
+</body>
+</html>

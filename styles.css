@@ -1,0 +1,41 @@
+:root {
+    --primary-red: #f05764;
+    --dark-red: #d62828;
+    --light-red: #f8ad9d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-primary {
+    background-color: var(--primary-red);
+}
+
+.text-primary {
+    color: var(--primary-red);
+}
+
+.border-primary {
+    border-color: var(--primary-red);
+}
+
+.hover\:bg-dark-red:hover {
+    background-color: var(--dark-red);
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.leaflet-popup-content {
+    font-size: 14px;
+}
+
+.form-input:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.2);
+}
