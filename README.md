@@ -6,8 +6,6 @@ Esta aplicação web foi desenvolvida com o objetivo de auxiliar pessoas com def
 
 O sistema permite que usuários informem a localização do local, descrevam a necessidade encontrada e acompanhem o status da solicitação, contribuindo para uma cidade mais acessível e inclusiva.
 
----
-
 ## 🎯 Objetivos
 
 - Facilitar o registro de solicitações de criação ou manutenção de rampas de acessibilidade  
@@ -15,8 +13,6 @@ O sistema permite que usuários informem a localização do local, descrevam a n
 - Centralizar e organizar demandas de acessibilidade  
 - Incentivar a participação da população na melhoria da cidade  
 - Servir como base para análises e relatórios sobre acessibilidade urbana  
-
----
 
 ## 🧩 Funcionalidades
 
@@ -28,8 +24,6 @@ O sistema permite que usuários informem a localização do local, descrevam a n
 - Acompanhamento do status da solicitação  
 - Coleta de feedback dos usuários  
 
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **Frontend:** Angular  
@@ -39,13 +33,9 @@ O sistema permite que usuários informem a localização do local, descrevam a n
 - **Banco de Dados:** *(se aplicável, informar)*  
 - **Controle de Versão:** Git e GitHub  
 
----
-
 ## 📐 Metodologia de Desenvolvimento
 
 O projeto foi desenvolvido seguindo uma abordagem estruturada, passando pelas etapas de levantamento de dados, planejamento, design de interface, desenvolvimento, testes e validação. A aplicação foi pensada com foco em usabilidade, acessibilidade e impacto social, considerando as necessidades reais dos usuários finais.
-
----
 
 ## 📊 Resultados Esperados
 
@@ -54,13 +44,10 @@ O projeto foi desenvolvido seguindo uma abordagem estruturada, passando pelas et
 - Engajamento da comunidade em questões de acessibilidade  
 - Geração de dados que auxiliem na tomada de decisão do poder público  
 
----
-
 ## 🧠 Aprendizados
 
 Durante o desenvolvimento do projeto, destacam-se aprendizados importantes como a relevância da acessibilidade no design de interfaces, os desafios da integração com serviços públicos e a importância do feedback dos usuários para evolução contínua da aplicação.
 
----
 # 🎬 DEMO
 EM BREVE
 
