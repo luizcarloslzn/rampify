@@ -1,5 +1,13 @@
 # Plataforma de Solicitação de Rampas de Acessibilidade – Recife
 
+# 🎬 Demo
+EM BREVE
+
+# 📱 Screenshots
+<img width="1781" height="907" alt="image" src="https://github.com/user-attachments/assets/2281b8d9-6879-4c58-b004-c40fbc113bd8" />
+<img width="407" height="823" alt="image" src="https://github.com/user-attachments/assets/671076a8-bf92-451f-b55b-a6e7e79fc9eb" />
+<img width="407" height="823" alt="image" src="https://github.com/user-attachments/assets/79d03987-63ba-4f59-9c78-5aabd753a60d" />
+
 ## 📌 Descrição do Projeto
 
 Esta aplicação web foi desenvolvida com o objetivo de auxiliar pessoas com deficiência física a solicitarem a criação ou manutenção de rampas de acessibilidade na cidade do Recife. A plataforma busca facilitar a comunicação entre a população e o poder público, promovendo inclusão, acessibilidade urbana e participação social por meio da tecnologia.
@@ -47,13 +55,5 @@ O projeto foi desenvolvido seguindo uma abordagem estruturada, passando pelas et
 ## 🧠 Aprendizados
 
 Durante o desenvolvimento do projeto, destacam-se aprendizados importantes como a relevância da acessibilidade no design de interfaces, os desafios da integração com serviços públicos e a importância do feedback dos usuários para evolução contínua da aplicação.
-
-# 🎬 DEMO
-EM BREVE
-
-# 📱 SCREENSHOTS
-<img width="1781" height="907" alt="image" src="https://github.com/user-attachments/assets/2281b8d9-6879-4c58-b004-c40fbc113bd8" />
-<img width="407" height="823" alt="image" src="https://github.com/user-attachments/assets/671076a8-bf92-451f-b55b-a6e7e79fc9eb" />
-<img width="407" height="823" alt="image" src="https://github.com/user-attachments/assets/79d03987-63ba-4f59-9c78-5aabd753a60d" />
 
 
