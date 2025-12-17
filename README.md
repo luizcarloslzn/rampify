@@ -34,12 +34,9 @@ O sistema permite que usuários informem a localização do local, descrevam a n
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Frontend:** Angular  
-- **Estilização:** HTML, CSS, Tailwind CSS (ou outro, se aplicável)  
-- **Mapas:** API de mapas (ex: Google Maps ou similar)  
-- **Backend:** *(se aplicável, informar)*  
-- **Banco de Dados:** *(se aplicável, informar)*  
-- **Controle de Versão:** Git e GitHub  
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## 📐 Metodologia de Desenvolvimento
 
